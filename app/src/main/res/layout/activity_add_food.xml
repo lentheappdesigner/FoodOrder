@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_food"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/bg6"
+    tools:context="com.example.len.foodorder.AddFood">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:onClick="imageButtonClicked"
+        android:id="@+id/foodImageButton"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemName"
+        android:hint="Enter food item name"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/ic_fiber_new_black_24dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemDesc"
+        android:hint="Enter item description"
+        android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/ic_comment_black_24dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemPrice"
+        android:hint="Enter item price"
+        android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/ic_local_atm_black_24dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add item to menu"
+        android:onClick="addItemButtonClicked"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#f16f7d"
+        android:background="@drawable/background"
+        />
+
+
+</LinearLayout>
